@@ -7,7 +7,7 @@ import walletRoutes from "./routes/wallet.route.js";
 import dataRoutes from "./routes/data.route.js";
 import airtimeRoute from "./routes/airtime.route.js"
 import { errorHandler } from "./middlewares/error.middleware.js";
-import { eletricityRoute } from "/routes/eletricity.route.js";
+import electricityRoutes from "./routes/electricity.route.js";
 
 dotenv.config();
 

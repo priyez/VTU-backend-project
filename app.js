@@ -5,7 +5,9 @@ import authRoutes from "./routes/auth.route.js";
 import transactionRoutes from "./routes/transaction.route.js";
 import walletRoutes from "./routes/wallet.route.js";
 import dataRoutes from "./routes/data.route.js";
+import airtimeRoute from "./routes/airtime.route.js"
 import { errorHandler } from "./middlewares/error.middleware.js";
+import { eletricityRoute } from "/routes/eletricity.route.js";
 
 dotenv.config();
 
@@ -21,6 +23,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/transactions", transactionRoutes);
 app.use("/api/wallet", walletRoutes);
 app.use("/api/data", dataRoutes);
+app.use("/api/airtime", airtimeRoute);
 
 
 // Health check
